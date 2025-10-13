@@ -40,7 +40,7 @@ A aplicação segue os princípios de arquitetura RESTful e separação entre ca
 
 ### QR Code :
 <div>
-  <a href ="https://atividade-restaurante-senai-frontend.onrender.com">
-    <img height = 400 width = 400 src = "atividade-restaurante.png">
+  <a href ="https://cadastro-cardapio-hk-frontend.onrender.com">
+    <img height = 400 width = 400 src = "cadastro-cardapio-hk.png">
   </a>
 </div>

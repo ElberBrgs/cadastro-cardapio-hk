@@ -1,20 +1,42 @@
-# Sistema de Gestão de Restaurantes
+# 🍽️ Cadastro Cardápio HK
 
-Este projeto visa gerenciar informações de um restaurante, permitindo o cadastro, listagem e visualização de detalhes de pratos, com foco em uma experiência visual de cardápio. Os dados serão consumidos de uma API.
+Aplicação full stack desenvolvida como atividade prática , com o objetivo de construir um sistema de **gestão de cardápio de restaurante**.  
+O projeto combina uma **API REST** feita com **Spring Boot** e um **frontend em React**, permitindo o cadastro, listagem e visualização de pratos.
 
 ---
 
-## Funcionalidades do Sistema
+## 🧩 Visão Geral
 
-* **Tela Inicial:** Exibe o logo do restaurante e serve como ponto de entrada do sistema.
-* **Tela de Cadastro de Prato:** Permite cadastrar um novo prato, informando:
-    * Nome do Prato
-    * Descrição
-    * Preço
-    * Categoria (Ex: Entrada, Prato Principal, Sobremesa, Bebida)
-    * Disponibilidade (Ex: Em estoque, Esgotado)
-    * URL da Imagem do Prato: Um campo para inserir o link de uma imagem do prato.
-* **Tela de Cardápio (Listagem de Pratos):** Apresenta todos os pratos cadastrados de forma visualmente organizada, exibindo a imagem, nome e preço.
+O **Cadastro Cardápio HK** implementa uma API em Java com **Spring Boot**, conectada a um banco de dados relacional (**PostgreSQL**), e um frontend em **React** para interação com o usuário.  
+
+A aplicação segue os princípios de arquitetura RESTful e separação entre camadas.
+
+### ⚙️ Funcionalidades Principais
+
+- Cadastro de pratos com nome, descrição, preço e categoria  
+- Listagem completa dos pratos cadastrados  
+- Edição e exclusão de pratos  
+- Integração completa entre frontend e backend  
+- Validação de dados e tratamento de erros  
+- Comunicação via **Axios**  
+- Navegação com **React Router DOM**  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### 🧮 Backend (API REST)
+- **Java**
+- **Spring Boot**
+- **PostgreSQL** 
+
+
+### 💻 Frontend (Interface do Usuário)
+- **React**
+- **React Router DOM**  
+- **Axios**   
+
+---
 
 ### QR Code :
 <div>

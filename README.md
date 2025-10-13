@@ -1,17 +1,36 @@
-# Sistema de Gestão de Restaurantes
+# 📁 Estrutura do Projeto
 
-Este projeto visa gerenciar informações de um restaurante, permitindo o cadastro, listagem e visualização de detalhes de pratos, com foco em uma experiência visual de cardápio. Os dados serão consumidos de uma API.
-
----
-
-## Funcionalidades do Sistema
-
-* **Tela Inicial:** Exibe o logo do restaurante e serve como ponto de entrada do sistema.
-* **Tela de Cadastro de Prato:** Permite cadastrar um novo prato, informando:
-    * Nome do Prato
-    * Descrição
-    * Preço
-    * Categoria (Ex: Entrada, Prato Principal, Sobremesa, Bebida)
-    * Disponibilidade (Ex: Em estoque, Esgotado)
-    * URL da Imagem do Prato: Um campo para inserir o link de uma imagem do prato.
-* **Tela de Cardápio (Listagem de Pratos):** Apresenta todos os pratos cadastrados de forma visualmente organizada, exibindo a imagem, nome e preço.
+```
+cadastro-cardapio-hk/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/cadastro_cardapio_hk/
+│   │   │   ├── controller/               # Controladores REST (endpoints da API)
+│   │   │   │   ├── PratoController.java
+│   │   │   │   └── Welcome.java
+│   │   │   │
+│   │   │   ├── exception/                # Tratamento de exceções e erros personalizados
+│   │   │   │   ├── GlobalExceptionHandler.java
+│   │   │   │   └── NomePratoJaExistenteException.java
+│   │   │   │
+│   │   │   ├── model/                    # Entidades e enums da aplicação
+│   │   │   │   ├── Categoria.java
+│   │   │   │   ├── Disponibilidade.java
+│   │   │   │   └── Prato.java
+│   │   │   │
+│   │   │   ├── repository/               # Repositórios JPA
+│   │   │   │   └── PratoRepository.java
+│   │   │   │
+│   │   │   ├── service/                  # Camada de serviço e regras de negócio
+│   │   │   │   └── PratoService.java
+│   │   │   │
+│   │   │   └── CadastroCardapioHkApplication.java # Classe principal da aplicação
+│   │   │
+│   │   └── resources/
+│   │       └── application.properties    # Configurações do Spring Boot
+│
+├── Dockerfile                            # Configuração do container Docker
+├── pom.xml                               # Configuração de dependências Maven
+└── README.md                             
+```

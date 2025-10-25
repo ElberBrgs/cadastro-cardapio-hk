@@ -8,7 +8,7 @@ function ListaDePratos() {
   useEffect(() => {
     const carregarPratos = async () => {
       try {
-        const response = await axios.get('https://cadastro-cardapio-hk-frontend.onrender.com/pratos');
+        const response = await axios.get('https://cadastro-cardapio-hk-backend.onrender.com/pratos');
         setPrato(response.data);
       } catch (error) {
         alert('Erro ao buscar prato: ' + error.message);

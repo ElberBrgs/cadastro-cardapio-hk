@@ -20,7 +20,7 @@ function FormularioCadastro() {
 
     const cadastrarPrato = async () => {
         try {
-            const response = await axios.post('https://cadastro-cardapio-hk-frontend.onrender.com/pratos', {
+            const response = await axios.post('https://cadastro-cardapio-hk-backend.onrender.com/pratos', {
                 nomeDoPrato,
                 descricaoDoPrato,
                 precoDoPrato,
